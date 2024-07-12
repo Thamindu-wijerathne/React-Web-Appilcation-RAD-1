@@ -1,0 +1,30 @@
+/* Greeting.css */
+
+.greeting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust as needed */
+    text-align: center;
+}
+
+.greeting-text {
+    font-size: 44px; /* Font size */
+    font-weight: bold; /* Bold font */
+    background: #ffffff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hide text fill for webkit browsers */
+    color: transparent; /* Fallback text color for non-webkit browsers */
+    margin-bottom: 10px; /* Space between text and icon */
+}
+
+.icon-container {
+    display: block;
+}
+
+.icon-container i {
+    font-size: 6em;
+    color: #61DBFB;
+}

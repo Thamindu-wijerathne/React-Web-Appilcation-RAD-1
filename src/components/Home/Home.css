@@ -1,0 +1,61 @@
+.home {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f3effa; 
+    color: #6B5B95;
+  }
+
+  
+  .home header {
+    margin-bottom: 20px;
+  }
+  
+  .home header h1 {
+    margin: 1em auto 1em auto;
+    font-size: 2.5em;
+  }
+  
+  .home header p {
+    font-size: 1.2em;
+  }
+  
+  .home section {
+    margin-bottom: 40px;
+  }
+  
+  .home section h2 {
+    margin: 1em auto 1em auto;
+    font-size: 2em;
+    color: #8B78E6; /* Medium Purple */
+  }
+  
+  .home section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .home section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .home section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .home .call-to-action button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #F08CB4; /* Medium Pink */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home .call-to-action button:hover {
+    background-color: #D94978; /* Dark Pink */
+  }
+  

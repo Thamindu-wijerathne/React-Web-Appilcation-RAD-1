@@ -1,0 +1,54 @@
+p {
+    line-height: 1em;   
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f3effa; /* Light Purple */
+    color: #6B5B95; /* Dark Purple */
+  }
+  
+  .container h1 {
+    margin: 1em auto;
+    font-size: 2.5em;
+  }
+  
+  .container p {
+    font-size: 1.2em;
+    margin: auto 1em auto 1em;
+  }
+  
+  .container section {
+    margin-bottom: 40px;
+  }
+  
+  .container h2 {
+    margin: 1em auto;
+    font-size: 2em;
+    color: #8B78E6; /* Medium Purple */
+  }
+  
+  .container h3 {
+    margin: 1em auto;
+    font-size: 1.5em;
+    color: #8B78E6; /* Medium Purple */
+  }
+  
+  .container .intro, 
+  .container .mission, 
+  .container .offerings {
+    margin-bottom: 20px;
+    margin: auto 1em auto 1em;
+  }
+  
+  .container .offering {
+    margin-bottom: 15px;
+  }
+  
+  .container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  

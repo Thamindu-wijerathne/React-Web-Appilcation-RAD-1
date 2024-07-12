@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Route, Routes, useLocation } from 'react-router-dom';
+
+import Navbar from "./components/Navbar/Navbar";
+import Greeting from './components/Greeting/Greeting';
+import ContactForm from './components/Contact_Us/Contact_Us';
+import Home from './components/Home/Home';
+import About from './components/About/About';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const location = useLocation();
+
+  return(
+      <div className="App">
+      <div className="background"></div>
+      <div className="overlay"></div>
+      <Navbar />
+      {/* Conditionally render Greeting based on the current path */}
+      {location.pathname === '/' && <Greeting />}
+      <Routes>
+        <Route path="/Contact_Us" exact element={<ContactForm />} />
+        <Route path="/Home" exact element={<Home />} />
+        <Route path="/About" exact element={<About />} />
+      </Routes>
     </div>
   );
 }
