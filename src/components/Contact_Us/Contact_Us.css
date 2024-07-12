@@ -2,14 +2,14 @@
     --background-color-light: #f3effa;
     --text-color-light: #6B5B95;
     --accent-color-light: #b972f8; /* Medium Pink */
-  }
-  
-  /* Dark mode theme */
-  [data-theme='dark'] {
+}
+
+/* Dark mode theme */
+[data-theme='dark'] {
     --background-color-dark: #1f1f1f;
     --text-color-dark: #ffffff;
     --accent-color-dark: #b876f1; /* Medium Pink */
-  }
+}
 
 .contact-form-container {
     max-width: 600px;
@@ -62,7 +62,6 @@
     background-color: #0056b3;
 }
 
-
 .contact-form-container .bottom {
     /* Styles for the paragraph at the bottom */
     margin-top: 1em;
@@ -72,13 +71,16 @@
     text-align: center;
 }
 
-/* this is used to top instruction part.. but white is much better than this */
-/* [data-theme='dark'] .contact-form-container .bottom {
-    color: var(--text-color-dark);
-  } */
-
 [data-theme='dark'] .contact-form-container input,
 [data-theme='dark'] .contact-form-container textarea {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
+}
+
+.error {
+    color: rgb(203, 0, 0);
+    font-size: 1.3em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
