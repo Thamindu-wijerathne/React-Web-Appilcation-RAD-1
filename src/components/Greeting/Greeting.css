@@ -18,6 +18,7 @@
     -webkit-text-fill-color: transparent; /* Hide text fill for webkit browsers */
     color: transparent; /* Fallback text color for non-webkit browsers */
     margin-bottom: 10px; /* Space between text and icon */
+    color: var(--text_color);
 }
 
 .icon-container {

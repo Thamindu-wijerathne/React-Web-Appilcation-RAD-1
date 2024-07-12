@@ -16,6 +16,10 @@
     padding: 0 20px; /* Add some padding to the container */
 }
 
+.NavbarItems a {
+    text-decoration: none;
+}
+
 .navbar-logo {
     color: #fff;
     cursor: pointer;
@@ -137,3 +141,4 @@
         transition: 250ms;
     }
 }
+

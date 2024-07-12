@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Greeting.css';
 
-const Greeting = () => {
+const Greeting = ({theme }) => {
     const [greeting, setGreeting] = useState('');
 
     useEffect(() => {
@@ -17,6 +17,11 @@ const Greeting = () => {
         setGreeting(newGreeting);
     }, []);
 
+    useEffect(() => {
+        // Update icon color based on theme
+        document.documentElement.style.setProperty('--icon_color', theme === 'light' ? '#61DBFB' : '#ffffff');
+    }, [theme]);
+    
     return (
         <div className="greeting-container">
             <p className='greeting-text'>{greeting}, Welcome to our website!</p>
