@@ -24,7 +24,7 @@
 .home header h1 {
   margin: 1em auto;
   font-size: 2.5em;
-  color: var(--accent-color-light)
+  color: var(--accent-color-light);
 }
 
 .home header p {

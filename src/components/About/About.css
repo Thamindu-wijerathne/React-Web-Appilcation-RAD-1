@@ -1,16 +1,29 @@
 /* About.css */
+:root {
+  --background-color-light: #f3effa;
+  --text-color-light: #6B5B95;
+  --accent-color-light: #b972f8; /* Medium Pink */
+}
+
+/* Dark mode theme */
+[data-theme='dark'] {
+  --background-color-dark: #1f1f1f;
+  --text-color-dark: #ffffff;
+  --accent-color-dark: #b876f1; /* Medium Pink */
+}
 
 .container {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  background-color: #f3effa; /* Light Purple */
-  color: #6B5B95; /* Dark Purple */
+  background-color: var(--background-color-light); 
+  color: var(--text-color-light); /* Dark Purple */
 }
 
 .container h1 {
   margin: 1em auto;
   font-size: 2.5em;
+  color: var(--accent-color-light);
 }
 
 .container p {
@@ -25,7 +38,7 @@
 .container h2 {
   margin: 1em auto;
   font-size: 2em;
-  color: #8B78E6; /* Medium Purple */
+  color: var(--accent-color-light); /* Medium Purple */
 }
 
 .container h3 {
@@ -73,4 +86,18 @@
 .image img {
   max-width: 20%; /* Ensure images don't exceed their container width */
   margin:-5px 30px 10px 30px; /* Add margin between images */
+}
+
+[data-theme='dark'] .container {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+[data-theme='dark'] .container h2 {
+  color: var(--accent-color-dark); /* Use dark mode accent color */
+}
+
+
+[data-theme='dark'] .container .section h1 {
+  color: var(--text-color-dark);
 }
