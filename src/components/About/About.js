@@ -1,5 +1,7 @@
 import React from "react";
 import './About.css';
+import image1 from './1.png';
+import image2 from './2.png';
 
 function About() {
   return (
@@ -47,6 +49,14 @@ function About() {
           <p>
             Learn from industry experts who bring their insights and practical tips into every course. Our instructors are passionate about React and dedicated to helping you succeed in your development journey.
           </p>
+        </div>
+
+        <div className="Team">
+          <h3>Team</h3>
+        </div>
+        <div className="image">  
+          <img src={image1} alt="pic 1 missing" />
+          <img src={image2} alt="pic 2 missing" />
         </div>
       </section>
     </div>
