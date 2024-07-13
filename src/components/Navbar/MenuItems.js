@@ -13,5 +13,10 @@ export const MenuItems = [
         title: 'Contact Us',
         url: '../Contact_Us',
         cName: 'nav-links'
+    },
+    {
+        title: <i class="fa-regular fa-user"></i>,
+        url: '../Contact_Us',
+        cName: 'nav-links'
     }
 ]

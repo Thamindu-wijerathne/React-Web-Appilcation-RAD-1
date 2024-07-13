@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact_Us.css';
 
 const ContactForm = () => {
@@ -82,6 +82,7 @@ const ContactForm = () => {
             console.log(formData);
             // Optionally, you can clear the form fields after submission
             setFormData({ name: '', address: '', phonenumber: '', email: '', message: '' });
+            localStorage.removeItem('contactFormData'); // Clear local storage
         }
     };
 
