@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'; // Use NavLink for active link styling
 import { MenuItems } from './MenuItems';
+
+import DarkMode from "../DarkMode/DarkMode"
+
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -13,6 +16,7 @@ class Navbar extends Component {
     };
 
     render() {
+        // This. used to access litteral value of the mention component value.
         return (
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
@@ -24,6 +28,7 @@ class Navbar extends Component {
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                    {/* map method used to access array */}
                     {MenuItems.map((item, index) => (
                         <li key={index}>
                             <NavLink
@@ -31,11 +36,13 @@ class Navbar extends Component {
                                 to={item.url}
                                 onClick={this.handleClick} // Close menu on link click
                             >
-                                {item.title}
+                                {/* this is the name showing part */}
+                                {item.title} 
                             </NavLink>
                         </li>
                     ))}
                 </ul>
+                <DarkMode />
             </nav>
         );
     }

@@ -22,6 +22,7 @@ const ContactForm = () => {
         let error = '';
         switch (name) {
             case 'name':
+                // trim() used to remove space in string
                 if (!value.trim()) {
                     error = 'Company Name is required';
                 }
@@ -57,6 +58,7 @@ const ContactForm = () => {
     };
 
     const handleChange = (e) => {
+        //console.log(e)
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
 
@@ -66,6 +68,8 @@ const ContactForm = () => {
     };
 
     const handleSubmit = (e) => {
+
+        // This prevents page from reloading while submitting
         e.preventDefault();
         // Check for errors before submission
         const errors = {};

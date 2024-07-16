@@ -30,9 +30,7 @@ function App() {
         <Route path="/Contact_Us" exact element={<ContactForm />} />
         <Route path="/Home" exact element={<Home />} />
         <Route path="/About" exact element={<About />} />
-      </Routes>
-
-      <DarkMode />      
+      </Routes>    
     </div>
   );
 }

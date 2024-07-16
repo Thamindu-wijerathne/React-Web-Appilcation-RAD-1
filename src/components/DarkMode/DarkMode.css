@@ -1,9 +1,12 @@
 .dark_mode {
-    position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    z-index: 1000; /* Ensure it stays on top */
-    margin: 0; /* Remove previous margins */
+    /* position: fixed; */
+    margin-bottom: 22px;
+    
+    /*
+    bottom: 20px; Adjust as needed 
+    right: 20px;  Adjust as needed 
+    z-index: 1000;  Ensure it stays on top 
+    margin: 0;  Remove previous margins */
 }
 
 
