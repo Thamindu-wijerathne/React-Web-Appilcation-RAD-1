@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import DarkMode from './components/DarkMode/DarkMode';
 import Timer from './components/Timer/Timer';
+import SpeedDial from './components/SpeedDial/SpeedDial'
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
         <Route path="/Contact_Us" exact element={<ContactForm />} />
         <Route path="/Home" exact element={<Home />} />
         <Route path="/About" exact element={<About />} />
-      </Routes>    
+      </Routes> 
+      
+      <SpeedDial />
     </div>
   );
 }

@@ -15,10 +15,16 @@
 /* Apply default light theme by default */
 .home {
   font-family: Arial, sans-serif;
-  text-align: center;
   padding: 20px;
   background-color: var(--background-color-light); 
   color: var(--text-color-light);
+}
+
+.home header {
+  margin-left: 5%;
+  text-align: left;
+  animation: slideInFromRight 0.5s ease-out forwards;
+
 }
 
 .home header h1 {
@@ -36,27 +42,27 @@
 }
 
 .home section h2 {
-  margin: 1em auto;
+  margin-top: 1.5em ;
+  margin-bottom: 1em ;
   font-size: 2em;
   color: var(--accent-color-light); /* Use accent color */
 }
 
 .home section p {
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.6;  
 }
 
 .home section ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
 }
 
 .home section ul li {
   margin-bottom: 10px;
 }
 
-.home .call-to-action button {
+.home button {
   padding: 10px 20px;
   font-size: 1.2em;
   background-color: var(--accent-color-light); /* Use accent color */
@@ -65,11 +71,71 @@
   cursor: pointer;
   margin-top: 1.5em;
   transition: background-color 0.3s ease;
+  display: block;
+  margin: 10px auto 10px auto;
 }
 
 .home .call-to-action button:hover {
   background-color: #D94978; /* Darken on hover */
 }
+
+
+.features {
+  margin-left: 5%;
+  text-align: left;
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+.intro {
+  margin-right: 5%;
+  text-align: right;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.audience {
+  margin-right: 5%;
+  text-align: right;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.benefits {
+  margin-left: 5%;
+  text-align: left;
+  animation: slideInFromRight 0.5s ease-out forwards;
+
+}
+
+.call-to-action {
+  margin-right: 5%;
+  text-align: right;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
 
 /* Apply dark mode styles */
 [data-theme='dark'] .home {
