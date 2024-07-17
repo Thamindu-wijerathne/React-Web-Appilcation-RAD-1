@@ -18,6 +18,7 @@
   padding: 20px;
   background-color: var(--background-color-light); 
   color: var(--text-color-light);
+  font-weight: bold;
 }
 
 .home header {
@@ -29,12 +30,12 @@
 
 .home header h1 {
   margin: 1em auto;
-  font-size: 2.5em;
+  font-size: 2.8em;
   color: var(--accent-color-light);
 }
 
 .home header p {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .home section {
@@ -54,7 +55,7 @@
 }
 
 .home section ul {
-  list-style-type: none;
+  list-style-type: circle;
   padding: 0;
 }
 
@@ -112,6 +113,27 @@
 
 }
 
+.secondPic {
+  overflow: hidden; /* Hide overflowing content */
+  max-width: 100%; /* Ensures the image scales down as viewport decreases */
+  height: auto; /* Maintain aspect ratio */
+  margin: 50px auto;
+  display: block;
+  animation: fade-in-rotate 4s ease-in-out forwards, rotate 6s linear infinite; /* Apply fade-in and rotation animations */
+}
+
+.codePic, .learnStudent, .firstPic .movPic {
+  margin-top: 20px; /* Fixed width */
+  overflow: hidden; /* Hide overflowing content */
+  max-width: 100%; /* Ensures the image scales down as viewport decreases */
+  height: auto; 
+  margin-right: 5%;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+ /* Ensures the image scales down as viewport decreases */
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -131,6 +153,24 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes fade-in-rotate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees (full circle) */
   }
 }
 

@@ -11,7 +11,7 @@ import './SpeedDial.css'
 
 const actions = [
   { icon: <a href='https://www.instagram.com/_.thamiya._/'><InstagramIcon sx={{marginTop:'8px'}} /></a>, name: 'Facebook' },
-  { icon: <a href='https://www.facebook.com/'><FacebookIcon sx={{marginTop:'8px'}} /></a>, name: 'Instagram' },
+  { icon: <a href='https://www.facebook.com/thamindu.wijerathne/'><FacebookIcon sx={{marginTop:'8px'}} /></a>, name: 'Instagram' },
   { icon: <a href='https://www.linkedin.com/in/thamindu-wijerathne-a2a6a12a9/'><LinkedInIcon sx={{marginTop:'8px'}} /></a>, name: 'Twitter' },
 ];
 
