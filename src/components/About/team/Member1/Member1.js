@@ -12,8 +12,8 @@ function Member1() {
               <img src={member1Photo} alt="John Doe" className="member-photo" />
             </td>
             <td className="member-info">
-              <h1>John Doe</h1>
-              <p>Role: Senior React Developer</p>
+              <h1>Thamindu Wijerathne</h1>
+              <p>Senior React Developer</p>
             </td>
           </tr>
         </tbody>

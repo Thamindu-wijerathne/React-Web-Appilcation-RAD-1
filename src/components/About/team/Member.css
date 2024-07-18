@@ -4,6 +4,7 @@
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
+    position: relative; /* Add position relative to .member-container */
   }
   
   .member-profile {
@@ -26,13 +27,14 @@
   .member-info h1 {
     margin-bottom: 5px;
     padding-bottom: 10px;
-    color: #8B78E6; /* Medium Purple */
+    color: #ffffff; /* Medium Purple */
   }
   
   .member-info p {
     margin: 0;
     font-size: 1.1em;
-    color: #888;
+    color: #c9c9c9;
+    font-weight: bold;
   }
   
   .member-bio, .member-expertise, .member-contact {
@@ -41,8 +43,15 @@
     text-align: left;
   }
   
+  .member-bio {
+ /* Change position to absolute */
+    left: 20px; /* Adjust left position as needed */
+    top: 20px; /* Adjust top position as needed */
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
   .member-bio h2, .member-expertise h2, .member-contact h2 {
-    color: #8B78E6; /* Medium Purple */
+    color: #ffffff; /* Medium Purple */
   }
   
   .member-expertise ul {
@@ -61,8 +70,29 @@
     color: #8B78E6; /* Medium Purple */
     text-decoration: none;
   }
+
+  .member-contact {
+    text-align: center;
+    color: white; /* Medium Purple */
+    text-decoration: none;
+  }
   
   .member-contact a:hover {
     text-decoration: underline;
+  }
+  
+  .member-bio p {
+    margin-top: 10px;
+    color: #c9c9c9;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   
