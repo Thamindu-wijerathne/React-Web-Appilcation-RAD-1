@@ -15,10 +15,11 @@
 /* Apply default light theme by default */
 .home {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 30px;
   background-color: var(--background-color-light); 
   color: var(--text-color-light);
   font-weight: bold;
+  padding-top: 50px;
 }
 
 .home header {

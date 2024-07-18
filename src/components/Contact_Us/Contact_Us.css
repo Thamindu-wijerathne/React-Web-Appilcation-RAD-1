@@ -18,6 +18,9 @@
     background-color: rgba(159, 96, 187, 0.1); /* Transparent background */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 100px;
+    padding-bottom: 130px;
 }
 
 .contact-form-container form {

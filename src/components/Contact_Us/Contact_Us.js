@@ -91,8 +91,8 @@ const ContactForm = () => {
             // Handle form submission logic here
             console.log(formData);
             // Optionally, you can clear the form fields after submission
-            //setFormData({ name: '', address: '', phonenumber: '', email: '', message: '' });
-            //localStorage.removeItem('contactFormData'); // Clear local storage
+            setFormData({ name: '', address: '', phonenumber: '', email: '', message: '' });
+            localStorage.removeItem('contactFormData'); // Clear local storage
         }
     };
 

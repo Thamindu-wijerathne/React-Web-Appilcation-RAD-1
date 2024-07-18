@@ -1,0 +1,153 @@
+:root {
+    --background-color-light: #f3effa;
+    --text-color-light: #6B5B95;
+    --accent-color-light: #b972f8; /* Medium Pink */
+  }
+  
+  /* Dark mode theme */
+  [data-theme='dark'] {
+    --background-color-dark: #1f1f1f;
+    --text-color-dark: #ffffff;
+    --accent-color-dark: #b876f1; /* Medium Pink */
+  }
+  
+  .container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color-light); 
+    color: var(--text-color-light); /* Dark Purple */
+    padding-top: 50px;
+  }
+  
+  .container h1 {
+    margin: 1em auto;
+    font-size: 2.5em;
+    color: var(--accent-color-light);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .container p {
+    font-size: 1.2em;
+    margin: auto 1em auto 1em;
+  }
+  
+  .container section {
+    margin-bottom: 40px;
+  }
+  
+  .container h2 {
+    margin: 1em auto;
+    font-size: 2em;
+    color: var(--accent-color-light); /* Medium Purple */
+  }
+  
+  .container h3 {
+    margin: 1em auto;
+    font-size: 1.5em;
+    color: #8B78E6; /* Medium Purple */
+  }
+  
+  .container .intro,
+  .container .mission,
+  .container .offerings {
+    margin-bottom: 20px;
+    margin: auto 1em auto 1em;
+  }
+  
+  .container .offering {
+    margin-bottom: 15px;
+  }
+  
+  .container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .Team {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Wrap items to next line if they exceed container width */
+    margin-top: 20px; /* Adjust margin as needed */
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+
+  .intro {
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .mission {
+    text-align: right;
+    animation: slideInFromLeft 0.5s ease-out forwards;
+  }
+  
+  .offerings {
+    text-align: left;
+    animation: slideInFromRight 0.5s ease-out forwards;
+  }
+  
+  [data-theme='dark'] .container {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  [data-theme='dark'] .container h2 {
+    color: var(--accent-color-dark); /* Use dark mode accent color */
+  }
+  
+  [data-theme='dark'] .container .section h1 {
+    color: var(--text-color-dark);
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-rotate {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate to 360 degrees (full circle) */
+    }
+  }
+  

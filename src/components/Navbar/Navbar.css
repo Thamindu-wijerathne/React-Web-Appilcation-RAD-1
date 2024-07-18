@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 /* General container styles */
 .container {
     font-family: Arial, sans-serif;
@@ -27,6 +31,7 @@
     padding: 20px;
     background-color: var(--background-color-light); 
     color: var(--text-color-light); /* Dark Purple */
+    padding-top: 1000px;
 }
 
 .container h1 {
@@ -110,13 +115,16 @@
 /* Navbar styles */
 .NavbarItems {
     background: var(--navbar-background-light);
-    /* !!!!!!!!!!This is height changer of the pink color in small navibar!!!!!!!!!!!*/
-    height: 80px; 
+    height: 80px;
     display: flex;
-    justify-content: space-between; /* Align items to the left and right */
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    padding: 0 20px; /* Add some padding to the container */
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .NavbarItems a {
@@ -160,7 +168,7 @@
     position: absolute;
     top: 100%; /* Position below the parent link */
     left: 0;
-    background-color: var(--navbar-background-light); /* Background color for sub-menu */
+    background: var(--navbar-background-light); /* Use same background color as navbar */
     padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -176,8 +184,9 @@
 .sub-nav-links {
     display: block;
     padding: 10px 20px;
-    color: var(--navbar-text-light);
+    color: var(--navbar-text-light); /* Use same text color as navbar */
     text-decoration: none;
+    
 }
 
 .sub-nav-links:hover {
@@ -208,6 +217,15 @@
 [data-theme='dark'] .fas-bars,
 [data-theme='dark'] .menu-icon {
     color: var(--navbar-text-dark);
+}
+
+/* Dark mode sub-menu adjustments */
+[data-theme='dark'] .nav-links .sub-menu {
+    background: var(--navbar-background-dark); /* Use same background color as dark mode navbar */
+}
+
+[data-theme='dark'] .sub-nav-links {
+    color: var(--navbar-text-dark); /* Use same text color as dark mode navbar */
 }
 
 /* Responsive styles for smaller screens */
@@ -305,4 +323,13 @@
         background: #fff;
         color: #6568f4;
     }
+
+    [data-theme='dark'] .NavbarItems {
+        background: var(--navbar-background-dark);
+        position: fixed; /* or sticky */
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure it stays on top of other content */
+    }
 }
+

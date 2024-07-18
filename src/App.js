@@ -11,6 +11,7 @@ import Timer from './components/Timer/Timer';
 import SpeedDial from './components/SpeedDial/SpeedDial'
 import Member1 from './components/About/team/Member1/Member1';
 import Member2 from './components/About/team/Member2/Member2';
+import Course from './components/About/Course/Course';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/About" exact element={<About />} />
         <Route path="/team/Member1" element={<Member1  />} />
         <Route path="/team/Member2" element={<Member2  />} />
+        <Route path="/About/Course" element={<Course  />} />
         
       </Routes> 
       

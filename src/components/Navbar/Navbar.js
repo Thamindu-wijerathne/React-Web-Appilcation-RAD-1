@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'; // Use NavLink for active link styling
 import { MenuItems } from './MenuItems';
-
-import DarkMode from "../DarkMode/DarkMode"
-
+import DarkMode from "../DarkMode/DarkMode";
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -16,7 +14,6 @@ class Navbar extends Component {
     };
 
     render() {
-        // This. used to access litteral value of the mention component value.
         return (
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
@@ -28,17 +25,31 @@ class Navbar extends Component {
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {/* map method used to access array */}
+                {/* this used to acces litteral value in the array */}
                     {MenuItems.map((item, index) => (
-                        <li key={index}>
+                        <li key={index} className={item.subMenu ? 'nav-links has-submenu' : 'nav-links'}>
                             <NavLink
                                 className={item.cName}
                                 to={item.url}
-                                onClick={this.handleClick} // Close menu on link click
+                                onClick={this.handleClick}
                             >
-                                {/* this is the name showing part */}
-                                {item.title} 
+                                {item.title}
                             </NavLink>
+                            {item.subMenu && (
+                                <ul className="sub-menu">
+                                    {item.subMenu.map((subItem, subIndex) => (
+                                        <li key={subIndex}>
+                                            <NavLink
+                                                className={subItem.cName}
+                                                to={subItem.url}
+                                                onClick={this.handleClick}
+                                            >
+                                                {subItem.title}
+                                            </NavLink>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </li>
                     ))}
                 </ul>

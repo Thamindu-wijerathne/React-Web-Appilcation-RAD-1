@@ -5,6 +5,7 @@
     padding: 20px;
     font-family: Arial, sans-serif;
     position: relative; /* Add position relative to .member-container */
+    padding-top: 130px;
   }
   
   .member-profile {
