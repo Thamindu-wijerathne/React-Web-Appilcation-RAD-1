@@ -1,0 +1,68 @@
+/* Member1.css */
+
+.member-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .member-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .member-profile img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .member-info {
+    text-align: left;
+  }
+  
+  .member-info h1 {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    color: #8B78E6; /* Medium Purple */
+  }
+  
+  .member-info p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #888;
+  }
+  
+  .member-bio, .member-expertise, .member-contact {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .member-bio h2, .member-expertise h2, .member-contact h2 {
+    color: #8B78E6; /* Medium Purple */
+  }
+  
+  .member-expertise ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .member-expertise li {
+    background-color: #f3effa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .member-contact a {
+    color: #8B78E6; /* Medium Purple */
+    text-decoration: none;
+  }
+  
+  .member-contact a:hover {
+    text-decoration: underline;
+  }
+  

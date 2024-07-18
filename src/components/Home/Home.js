@@ -61,11 +61,12 @@ const Home = () => {
                     <li>High demand in the job market</li>
                 </ul>
             </section>
+            <img src={movPic} alt="4th pic" className='movPic'></img>
+
             <section className="call-to-action">
                 <h2>Start Learning React Today</h2>
                 <p>Explore our courses and tutorials to get started.</p>
             </section>
-            <img src={movPic} alt="4th pic" className='movPic'></img>
             <section className='button'>   
                 <button onClick={toggleTheme}>Sign up</button>
             </section>

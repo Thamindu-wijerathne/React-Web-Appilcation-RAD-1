@@ -261,9 +261,11 @@
         position: absolute;
         top: 0;
         right: 0;
+        bottom: 70px;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        margin-bottom: 30px;
     }
 
     .fa-times {

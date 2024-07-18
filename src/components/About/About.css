@@ -1,4 +1,3 @@
-/* About.css */
 :root {
   --background-color-light: #f3effa;
   --text-color-light: #6B5B95;
@@ -24,6 +23,7 @@
   margin: 1em auto;
   font-size: 2.5em;
   color: var(--accent-color-light);
+  animation: fadeIn 1s ease-out forwards;
 }
 
 .container p {
@@ -69,11 +69,13 @@
   align-items: center; /* Center vertically */
   flex-wrap: wrap; /* Wrap items to next line if they exceed container width */
   margin-top: 20px; /* Adjust margin as needed */
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .Team img {
   max-width: 100%; /* Adjust maximum width */
   margin: 10px; /* Add margin between images */
+  transition: transform 0.3s ease-out; /* Smooth transition for scaling */
 }
 
 .image {
@@ -81,11 +83,45 @@
   justify-content: center; /* Center images horizontally */
   align-items: center; /* Center images vertically */
   margin-top: 20px; /* Adjust margin as needed */
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .image img {
   max-width: 20%; /* Ensure images don't exceed their container width */
-  margin:-5px 30px 10px 30px; /* Add margin between images */
+  margin: -5px 30px 10px 30px; /* Add margin between images */
+  transition: transform 0.3s ease-out; /* Smooth transition for scaling */
+}
+
+.image1 {
+  position: relative;
+  left: 20%;
+  scale: 1;
+}
+
+.image1:hover,
+.image2:hover {
+  transform: scale(1.1); /* Scale up image uniformly */
+}
+
+.image2 {
+  position: relative;
+  right: 35%;
+  scale: 1.3;
+}
+
+.intro {
+  text-align: center;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.mission {
+  text-align: right;
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.offerings {
+  text-align: left;
+  animation: slideInFromRight 0.5s ease-out forwards;
 }
 
 [data-theme='dark'] .container {
@@ -97,7 +133,55 @@
   color: var(--accent-color-dark); /* Use dark mode accent color */
 }
 
-
 [data-theme='dark'] .container .section h1 {
   color: var(--text-color-dark);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-rotate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees (full circle) */
+  }
 }

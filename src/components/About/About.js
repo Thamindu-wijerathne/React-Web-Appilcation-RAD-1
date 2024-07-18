@@ -1,4 +1,6 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+
 import './About.css';
 import image1 from './1.png';
 import image2 from './2.png';
@@ -54,11 +56,15 @@ function About() {
         <div className="Team">
           <h3>Team</h3>
         </div>
-        <div className="image">  
-          <img src={image1} alt="pic 1 missing" />
-          <img src={image2} alt="pic 2 missing" />
-        </div>
       </section>
+      <div className="image">  
+          <NavLink to="/team/Member1" >
+            <img src={image1} alt="pic 1 missing" className="image1" />
+          </NavLink>
+          <NavLink to="/team/Member2">
+            <img src={image2} alt="pic 2 missing" className="image2"/>
+          </NavLink>
+        </div>
     </div>
   );
 }
